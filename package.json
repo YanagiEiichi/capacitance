@@ -1,0 +1,11 @@
+{
+  "name": "capacitance",
+  "version": "1.0.0",
+  "description": "Collapse stream to a promise.",
+  "main": "capacitance.js",
+  "scripts": {
+    "test": "cd tests && make"
+  },
+  "author": "yanagieiichi@web-tinker.com",
+  "license": "MIT"
+}
