@@ -18,7 +18,7 @@ expection.push = function() {
 var readable = new Readable();
 readable._read = function() {};
 void function callee(i) {
-  if(i --> 0) {
+  if(i-- > 0) {
     readable.push(i + '\n');
     setTimeout(callee.bind(null, i), 100);
   } else {
