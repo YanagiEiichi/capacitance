@@ -13,7 +13,7 @@ var Capacitance = function() {
 Capacitance.prototype = Object.create(Transform.prototype, {
   _write: {
     value: function(data, enc, done) {
-      if(typeof data === 'string') data = new Buffer(data);
+      if (typeof data === 'string') data = Buffer.from(data, enc || 'utf8');
       this.buffers.push(data);
       done();
     }
