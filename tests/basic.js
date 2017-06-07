@@ -7,7 +7,7 @@ var crypto = require('crypto');
 var expection = [];
 expection.push = function() {
   [].push.apply(this, arguments);
-  if(this.length === 5) {
+  if (this.length === 5) {
     var md5 = crypto.createHash('md5');
     md5.update(this + '');
     var hex = md5.digest('hex');
@@ -18,7 +18,7 @@ expection.push = function() {
 var readable = new Readable();
 readable._read = function() {};
 void function callee(i) {
-  if(i-- > 0) {
+  if (i-- > 0) {
     readable.push(i + '\n');
     setTimeout(callee.bind(null, i), 100);
   } else {
