@@ -1,6 +1,6 @@
 {
   "name": "capacitance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collapse stream to a promise.",
   "main": "capacitance.js",
   "scripts": {
